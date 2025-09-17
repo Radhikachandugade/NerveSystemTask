@@ -193,18 +193,18 @@ export default function App() {
       </div>
 
       {/* Date Dropdown */}
-      <div className="card-dropdown">
-        <div className="card-dropdown-selected" onClick={() => setOpen(!open)}>
+      <div className="date-dropdown">
+        <div className="date-dropdown-selected" onClick={() => setOpen(!open)}>
           {selectedDate}
           <span className="arrow">{open ? "▲" : "▼"}</span>
         </div>
 
         {open && (
-          <div className="card-dropdown-list">
+          <div className="date-dropdown-list">
             {dateArray.map((date) => (
               <div
                 key={date}
-                className={`card-dropdown-item ${
+                className={`date-dropdown-item ${
                   selectedDate === date ? "selected" : ""
                 }`}
                 onClick={() => {

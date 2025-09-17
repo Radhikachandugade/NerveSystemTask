@@ -88,15 +88,14 @@ select {
 }
 
 
-/* Dropdown container */
-.card-dropdown {
+.date-dropdown {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
 
-/* Selected card */
-.card-dropdown-selected {
+
+.date-dropdown-selected {
   padding: 14px;
   border-radius: 10px;
   border: 1px solid #ddd;
@@ -110,8 +109,7 @@ select {
   font-weight: 500;
 }
 
-/* Dropdown list */
-.card-dropdown-list {
+.date-dropdown-list {
   margin-top: 8px;
   border-radius: 10px;
   background: #fff;
@@ -122,8 +120,7 @@ select {
   max-height: none;
 }
 
-/* Dropdown item */
-.card-dropdown-item {
+.date-dropdown-item {
   
   padding: 14px;
   border: 1px solid #f0f0f0;
@@ -134,11 +131,11 @@ select {
 
 
 
-.card-dropdown-item:hover {
+.date-dropdown-item:hover {
   background: #f9f9f9;
 }
 
-.card-dropdown-item.selected {
+.date-dropdown-item.selected {
   background: #eef4ff;
   font-weight: bold;
 }
@@ -174,6 +171,6 @@ select {
 }
 
 .empty b {
-  display: block; /* pushes it to a new line */
-  margin-top: 14px; /* optional spacing */
+  display: block;
+  margin-top: 14px; 
 }
