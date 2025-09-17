@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  
+  
+}
+
+.toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  background: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: rgb(117, 117, 117);
+}
+
+.toggle button.active {
+  font-size: medium;
+  font-weight: bold;
+  background: #004cff;
+  color: white;
+  border-radius: 6px;
+  border-color: #007bff;
+}
+
+select {
+  appearance: none; 
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+
+/* Dropdown container */
+.card-dropdown {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Selected card */
+.card-dropdown-selected {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Dropdown list */
+.card-dropdown-list {
+  margin-top: 8px;
+  border-radius: 10px;
+  background: #fff;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  max-height: none;
+}
+
+/* Dropdown item */
+.card-dropdown-item {
+  
+  padding: 14px;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+
+.card-dropdown-item:hover {
+  background: #f9f9f9;
+}
+
+.card-dropdown-item.selected {
+  background: #eef4ff;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 12px;
+  color: #004cff;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.card p{
+  color: rgb(117, 117, 117);
+}
+
+.empty {
+  padding: 20px;
+  text-align:center;
+  margin-top: 4px;
+  color: rgb(59, 59, 59);
+}
+
+.empty b {
+  display: block; /* pushes it to a new line */
+  margin-top: 14px; /* optional spacing */
+}
