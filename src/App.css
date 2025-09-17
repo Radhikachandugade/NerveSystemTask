@@ -140,9 +140,17 @@ select {
   font-weight: bold;
 }
 
-.arrow {
+/* .arrow {
   font-size: 12px;
   color: #004cff;
+} */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .cards {
@@ -160,6 +168,7 @@ select {
 }
 
 .card p{
+  display: flex;
   color: rgb(117, 117, 117);
 }
 
@@ -173,4 +182,12 @@ select {
 .empty b {
   display: block;
   margin-top: 14px; 
+}
+
+.dot{
+  display: inline-block; 
+  font-size: 26px; 
+  color:rgb(117, 117, 117); 
+  border-radius: 6px; 
+  margin-top: -5px;
 }
